@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Mak Nyus - Menu & Pemesanan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Warung Mak Nyus</h1>
+            <p>Rasa Bintang Lima, Harga Kaki Lima</p>
+            <a href="#menu" class="btn-primary">Lihat Menu</a>
+        </div>
+    </header>
+
+    <!-- Navigation Filter -->
+    <nav class="filter-nav" id="menu">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="tab-btn active" data-category="semua">Semua</button>
+                <button class="tab-btn" data-category="makanan">Makanan</button>
+                <button class="tab-btn" data-category="minuman">Minuman</button>
+                <button class="tab-btn" data-category="snack">Snack</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <div id="menu-grid" class="menu-grid">
+                <!-- Menu items will be injected by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Overlay/Panel -->
+    <div id="cart-panel" class="cart-panel">
+        <div class="cart-header">
+            <h3>Keranjang Belanja</h3>
+            <button id="close-cart" class="close-btn"><i data-lucide="x"></i></button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <!-- Cart items will be injected by JavaScript -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cart-total-price">Rp 0</span>
+            </div>
+            <div class="cart-actions">
+                <button id="clear-cart" class="btn-outline">Kosongkan</button>
+                <button id="checkout-wa" class="btn-checkout">
+                    <i data-lucide="message-circle"></i> Pesan via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Cart Button (Visible when cart has items) -->
+    <button id="floating-cart" class="floating-cart">
+        <i data-lucide="shopping-cart"></i>
+        <span id="cart-count">0</span>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">Item ditambahkan!</div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Warung Mak Nyus. Semua hak dilindungi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
