@@ -377,6 +377,20 @@ body {
     }
     .cart-panel {
         max-width: 100%;
+        width: 100%;
+        right: -100%;
+    }
+    .cart-actions {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .btn-checkout {
+        width: 100%;
+        padding: 15px;
+    }
+    .btn-outline {
+        width: 100%;
+        padding: 15px;
     }
 }
 
@@ -391,11 +405,7 @@ body {
     .hero {
         height: 50vh;
     }
-    .cart-actions {
-        grid-template-columns: 1fr;
-    }
     .cart-panel {
-        max-width: 100%;
         right: -100%;
     }
     .btn-checkout {
