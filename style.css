@@ -391,4 +391,14 @@ body {
     .hero {
         height: 50vh;
     }
+    .cart-actions {
+        grid-template-columns: 1fr;
+    }
+    .cart-panel {
+        max-width: 100%;
+        right: -100%;
+    }
+    .btn-checkout {
+        font-size: 0.9rem;
+    }
 }
